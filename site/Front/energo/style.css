@@ -1,0 +1,40 @@
+*{
+    margin:0;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.wrapper{
+    width:100vw;
+    padding:0px 0 0 8px;
+}
+header{
+    margin-right: 16px;
+    width:initial;
+    height: 116px;
+    background-color: #1E1E1E;
+    border-radius: 0 0 24px 24px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width:334px;
+    height:23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    height:1000px;
+    display:flex;
+    flex-direction: column;
+}
+.wish{
+    width:initial;
+    height: 697px;
+    background: #8338EC;
+    margin-right: 16px;
+}
