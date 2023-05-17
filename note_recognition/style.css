@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: white
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    background-color: #171717;
+    width: 100vw;
+    height: 120px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
