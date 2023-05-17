@@ -1,0 +1,235 @@
+@font-face{
+    font-family: 'Akzidenz-Grotesk Pro';
+    src:url("../font/akzgotesk/akzidenzgroteskpro_regular.ttf");
+}
+@font-face{
+    font-family: 'Akzidenz-Grotesk Pro bold';
+    src:url("../font/akzgotesk/akzidenzgroteskpro_bold.ttf")
+}
+@font-face {
+    font-family: 'bold';
+    src:url("../font/akzgotesk/akzidenzgroteskpro_boldex.otf");
+}
+@font-face {
+    font-family: 'inter';
+    src:url("../font/inter/Inter-Regular.otf")
+}
+@font-face {
+    font-family: 'inter bold';
+    src:url("../font/inter/Inter-Bold.otf")
+}
+:root{
+    --col:linear-gradient(to right,#C33764, #1D2671);
+}
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: black;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+    font-style: none;
+}
+.showResult{
+    transform:translateY(-40px);
+}
+
+.result{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    top:180px;
+    left:50%;
+    margin-left:-500px;
+    height:700px;
+    width:1000px;
+    z-index: 3;
+    color:white;
+    font-family: 'Akzidenz-Grotesk Pro';
+    font-size:30px;
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.tryAgain{
+    height: 30px;
+    width: 50px;
+    background-color: black;
+}
+header{
+    width:100%;
+    height:60px;
+    position:absolute;
+    background-color: white;
+}
+.wrapper{
+    margin:auto;
+    display:flex;
+    height: 100vh;
+    width: 1110px;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    height: 60px;
+    width:100%;
+    justify-content: center;
+    z-index: 1;
+}
+.header_place{
+    display:flex;
+    height: 60px;
+    width: 1110px;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    width: 160px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    width:451px;
+    justify-content: space-between;
+}
+.menu_punct{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 37px;
+    border-radius: 16px;
+
+    font-family: 'Akzidenz-Grotesk Pro';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #050606;
+    background-color: white;
+    z-index: 1;
+}
+.menu_punct:hover{
+    /* background: linear-gradient(90deg, #A6C0FE 0%, #F68084 100%);
+    color:white; */
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: linear-gradient(90deg, #A6C0FE 0%, #F68084 100%);
+    text-underline-offset: 22px;
+}
+
+.auto{
+    height: 100%;
+    width:200px;
+}
+
+.main{
+    font-family: 'Akzidenz-Grotesk Pro';
+    color:white;
+    display:flex;
+    width:1110px;
+    height: 100%;
+    margin:auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main_heading{
+    height:auto;
+    align-items: center;
+    font-size:16px;
+    color:rgba(255, 255, 255, 1);
+    letter-spacing: normal;
+}
+
+h2{
+    margin:10px;
+    margin-top:30px;
+    font-family: 'bold';
+    letter-spacing: 0.03em;
+}
+
+input{
+    background: none;
+    padding-left: 10px;
+    outline:1px solid rgba(255, 255, 255, 0.5);
+    border-style:inherit;
+    color:white;
+    height:80px;
+    width:400px;
+    border-radius: 5px;
+    margin-top:5px;
+    font-size:20px;
+}
+
+input:hover{
+    outline:1px solid rgba(255, 255, 255, 1);
+}
+
+.enterText{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:450px;
+}
+
+.regis{
+    display:flex;
+    /* outline: 1px solid red; */
+    height:70px;
+    width:400px;
+    flex-direction: column;
+    font-size:11px;
+    color:rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.1em;
+    margin-left:-40px;
+}
+
+.create:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.create{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width:415px;
+    height:40px;
+    margin-top:60px;
+    border-radius: 10px;
+    margin-left:-43px;
+    color:black;
+    font-family: "Inter bold";
+    cursor: pointer;
+}
+.pasError{
+	color:red;
+	position:absolute;
+	margin-top:70px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:rgb(36, 36, 36);
+    position: relative;
+    width:100%;
+    height:100px;
+    font-family: 'Akzidenz-Grotesk Pro';
+}
+    
